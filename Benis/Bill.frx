@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="12/28/2010 03:23:02" ReportInfo.Modified="08/24/2012 02:12:48" ReportInfo.CreatorVersion="1.4.20.0">
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqtvFp//9ibkG/FEqjc2JBYrMomOXdlKn/+FPmxpq4m4meHyAEl3AoTtnY3GajR8xdK9xUZMUqsYoIVZw2SGpo1B0UnI6lJ+Gkkp0+fI/f4TnKgBd6KYgja6wZ8x27rO4iXN5WlV1F0qgFrIY7rtDH9gCz8VC+thH6+Nm0fpITQUsoLiwiDssNHCtZ4+DKVF17">
+      <TableDataSource Name="ViewContractPassports" Alias="TblBill" DataType="System.Int32" Enabled="true" TableName="ViewContractPassports">
+        <Column Name="Subscription" DataType="System.Double" PropName="PassportNo"/>
+        <Column Name="Garbage" DataType="System.Double" PropName="CaptainFullName"/>
+        <Column Name="Wtr_Price" DataType="System.Double" PropName="PassengerFullName"/>
+        <Column Name="Column" Alias="Cntr_No" DataType="System.String"/>
+        <Column Name="Partnership" DataType="System.Double" PropName="Column1"/>
+        <Column Name="Discount" DataType="System.Double" PropName="Column2"/>
+        <Column Name="Renovation" DataType="System.Double" PropName="Column3"/>
+        <Column Name="Communion" DataType="System.Double" PropName="Column4"/>
+        <Column Name="Others" DataType="System.Double" PropName="Column5"/>
+        <Column Name="Cntr_Liter" DataType="System.Int32" PropName="Column6"/>
+        <Column Name="Tbl_Usage.Cntr_No" DataType="System.Int32" PropName="Column7"/>
+        <Column Name="Debt" DataType="System.Double" PropName="Column1"/>
+        <Column Name="Credit" DataType="System.Double" PropName="Column1"/>
+        <Column Name="FullName" DataType="System.String" PropName="Column1"/>
+        <Column Name="Addr" DataType="System.String" PropName="Column1"/>
+        <Column Name="Cntr_Liter_Pre" DataType="System.Int32" PropName="Column1"/>
+        <Column Name="TermSum" DataType="System.Double" PropName="Column1"/>
+        <Column Name="Sub500" DataType="System.Double" PropName="Column1"/>
+        <Column Name="BillSum" DataType="System.Double" PropName="Column1"/>
+        <Column Name="Term_No" DataType="System.Int32" PropName="Column1"/>
+        <Column Name="TermStart" DataType="System.String" PropName="Column1"/>
+        <Column Name="TermStart_Pre" DataType="System.String" PropName="Column1"/>
+        <Column Name="Cust_No" DataType="System.String" PropName="Column1"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+    <Parameter Name="Year" DataType="System.String"/>
+    <Parameter Name="ExportDate" DataType="System.String"/>
+    <Parameter Name="PayLimit" DataType="System.String"/>
+    <Parameter Name="Description" DataType="System.String"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="297" PaperHeight="210" RawPaperSize="9" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0">
+    <PageHeaderBand Name="PageHeader1" Width="1122.66"/>
+    <DataBand Name="Data1" Top="4" Width="1122.66" Height="396.9" Fill.Color="White" DataSource="ViewContractPassports">
+      <TextObject Name="Text9" Left="657.72" Top="18.9" Width="415.8" Height="37.8" Fill.Color="White" Text="شبکه آبرسانی روستای بنیـــــــس" HorzAlign="Center" VertAlign="Center" Font="B Jadid, 22pt, style=Bold"/>
+      <TextObject Name="Text15" Left="657.72" Top="68.04" Width="113.4" Height="37.8" Border.Lines="Left, Right, Top" Border.BottomLine.Color="DimGray" Border.BottomLine.Style="DashDotDot" Fill.Color="White" Text="کنتـور" HorzAlign="Center" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text16" Left="842.94" Top="68.04" Width="230.58" Height="37.8" Border.Lines="Left, Right, Top" Border.BottomLine.Color="DimGray" Border.BottomLine.Style="DashDotDot" Fill.Color="White" Text="مشترک گرامی" HorzAlign="Center" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text17" Left="986.58" Top="143.64" Width="86.94" Height="45.36" Border.Lines="All" Border.LeftLine.Color="DimGray" Border.LeftLine.Style="DashDotDot" Fill.Color="90, 173, 255, 47" Text="نشانــــــی" HorzAlign="Right" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text18" Left="1039.5" Top="200.34" Width="34.02" Height="37.8" Border.Lines="Right, Top, Bottom" Fill.Color="White" Text="سال" HorzAlign="Right" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text19" Left="948.78" Top="200.34" Width="41.58" Height="37.8" Border.Lines="Top, Bottom" Fill.Color="90, 173, 255, 47" Text="دوره" HorzAlign="Right" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text1" Left="990.36" Top="200.34" Width="49.14" Height="37.8" Border.Lines="Left, Top, Bottom" Text="[Year]" HorzAlign="Right" VertAlign="Center" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text20" Left="982.8" Top="238.14" Width="90.72" Height="37.8" Border.Lines="Right, Top, Bottom" Fill.Color="90, 173, 255, 47" Text="تاریخ صدور" HorzAlign="Right" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text3" Left="888.3" Top="238.14" Width="94.5" Height="37.8" Border.Lines="Left, Top, Bottom" Fill.Color="90, 173, 255, 47" Text="[ExportDate]" HorzAlign="Right" VertAlign="Bottom" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text21" Left="982.8" Top="275.94" Width="90.72" Height="37.8" Border.Lines="Right, Top, Bottom" Fill.Color="White" Text="مهلت پرداخت" HorzAlign="Right" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text4" Left="888.3" Top="275.94" Width="94.5" Height="37.8" Border.Lines="Left, Top, Bottom" Text="[PayLimit]" HorzAlign="Right" VertAlign="Bottom" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text22" Left="805.14" Top="200.34" Width="75.6" Height="37.8" Border.Lines="All" Fill.Color="White" Text="قرائت کنتور" HorzAlign="Center" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text23" Left="729.54" Top="200.34" Width="75.6" Height="37.8" Border.Lines="All" Fill.Color="90, 173, 255, 47" Text="قبلی" HorzAlign="Center" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text25" Left="805.14" Top="238.14" Width="75.6" Height="37.8" Border.Lines="All" Fill.Color="White" Text="تاریخ" HorzAlign="Center" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text27" Left="805.14" Top="275.94" Width="75.6" Height="37.8" Border.Lines="All" Fill.Color="White" Text="کارکرد" HorzAlign="Center" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text29" Left="657.72" Top="200.34" Width="71.82" Height="37.8" Border.Lines="All" Fill.Color="White" Text="فعلی" HorzAlign="Center" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text5" Left="657.72" Top="325.08" Width="415.8" Height="49.14" Text="[Description]" RightToLeft="true" Font="B Lotus, 10pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text30" Left="540.54" Top="18.9" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="White" Text="آبونمان" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text31" Left="540.54" Top="45.36" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="MistyRose" Text="آب بها" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text32" Left="540.54" Top="71.82" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="White" Text="دفع زباله" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text33" Left="540.54" Top="98.28" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="MistyRose" Text="خدمات عمرانی" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text34" Left="540.54" Top="124.74" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="White" Text="مشارکت عمومی" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text35" Left="540.54" Top="151.2" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="MistyRose" Text="خودیاری" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text36" Left="540.54" Top="177.66" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="White" Text="سایر موارد" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text37" Left="540.54" Top="230.58" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="White" Text="جمع دوره" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text38" Left="540.54" Top="257.04" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="MistyRose" Text="بدهی قبلی" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text39" Left="540.54" Top="283.5" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="White" Text="بستانکاری قبلی" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text41" Left="540.54" Top="309.96" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="MistyRose" Text="کسر پانصد ریال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text42" Left="540.54" Top="347.76" Width="105.84" Height="26.46" Border.Lines="Right, Top, Bottom" Fill.Color="White" Text="مبلغ قابل پرداخت" HorzAlign="Right" Font="B Titr, 11pt, style=Bold"/>
+      <TextObject Name="Text43" Left="400.68" Top="347.76" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="White" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text44" Left="400.68" Top="309.96" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="MistyRose" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text46" Left="400.68" Top="283.5" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="White" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text47" Left="400.68" Top="257.04" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="MistyRose" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text48" Left="400.68" Top="230.58" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="White" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text49" Left="400.68" Top="177.66" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="White" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text50" Left="400.68" Top="151.2" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="MistyRose" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text51" Left="400.68" Top="124.74" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="White" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text52" Left="400.68" Top="98.28" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="MistyRose" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text53" Left="400.68" Top="71.82" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="White" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text54" Left="400.68" Top="45.36" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="MistyRose" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text55" Left="400.68" Top="18.9" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="White" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text56" Left="192.78" Top="347.76" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="AliceBlue" Text="مبلغ قابل پرداخت" HorzAlign="Right" Font="B Titr, 11pt, style=Bold"/>
+      <TextObject Name="Text57" Left="52.92" Top="347.76" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="AliceBlue" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text58" Left="192.78" Top="321.3" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="AliceBlue" Text="مهلت پرداخت" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text59" Left="52.92" Top="321.3" Width="139.86" Height="26.46" Border.Lines="All" Fill.Color="AliceBlue" Text="[PayLimit]" HorzAlign="Right" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text60" Left="192.78" Top="230.58" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="White" Text="خودیاری" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text61" Left="192.78" Top="257.04" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="255, 255, 192" Text="بدهی قبلی" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text62" Left="192.78" Top="283.5" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="White" Text="بستانکاری قبلی" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text63" Left="192.78" Top="204.12" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="255, 255, 192" Text="آب بها" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text64" Left="192.78" Top="177.66" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="White" Text="مشترک گرامی" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text65" Left="192.78" Top="151.2" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="255, 255, 192" Text="شماره کنتـور" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text66" Left="249.48" Top="69.93" Width="49.14" Height="26.46" Border.Lines="Right, Top, Bottom" Fill.Color="AliceBlue" Text="سال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text67" Left="132.3" Top="69.93" Width="60.48" Height="26.46" Border.Lines="Right, Top, Bottom" Fill.Color="AliceBlue" Text="دوره" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text68" Left="192.78" Top="69.93" Width="56.7" Height="26.46" Border.Lines="Top, Bottom" Fill.Color="AliceBlue" Text="[Year]" HorzAlign="Right" Font="B Lotus, 14pt, style=Bold"/>
+      <LineObject Name="Line1" Left="351.54" Height="396.9" Border.Color="Gray" Border.Style="DashDot" Diagonal="true"/>
+      <TextObject Name="Text2" Left="438.48" Top="18.9" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Text="[TblBill.Subscription]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text7" Left="438.48" Top="45.36" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Fill.Color="MistyRose" Text="[TblBill.Wtr_Price]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text8" Left="438.48" Top="71.82" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Text="[TblBill.Garbage]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text10" Left="438.48" Top="98.28" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Fill.Color="MistyRose" Text="[TblBill.Renovation]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text11" Left="438.48" Top="151.2" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Fill.Color="MistyRose" Text="[TblBill.Communion]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text12" Left="438.48" Top="177.66" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Text="[TblBill.Others]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text13" Left="438.48" Top="257.04" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Fill.Color="MistyRose" Text="[TblBill.Debt]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text14" Left="438.48" Top="283.5" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Text="[TblBill.Credit]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text26" Left="438.48" Top="124.74" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Text="[TblBill.Partnership]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text28" Left="657.72" Top="105.84" Width="113.4" Height="37.8" Border.Lines="All" Border.TopLine.Color="DimGray" Border.TopLine.Style="DashDotDot" Fill.Color="White" Text="[TblBill.Tbl_Usage.Cntr_No]" HorzAlign="Center" VertAlign="Bottom" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text71" Left="842.94" Top="105.84" Width="230.58" Height="37.8" Border.Lines="All" Border.TopLine.Color="DimGray" Border.TopLine.Style="DashDotDot" Fill.Color="White" Text="[TblBill.FullName]" HorzAlign="Center" VertAlign="Bottom" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text72" Left="657.72" Top="275.94" Width="71.82" Height="37.8" Border.Lines="All" Text="[TblBill.Cntr_Liter]" HorzAlign="Center" VertAlign="Bottom" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text74" Left="729.54" Top="275.94" Width="75.6" Height="37.8" Border.Lines="All" Fill.Color="90, 173, 255, 47" Text="[TblBill.Cntr_Liter_Pre]" HorzAlign="Center" VertAlign="Bottom" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text75" Left="438.48" Top="230.58" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Text="[TblBill.TermSum]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text76" Left="438.48" Top="309.96" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Fill.Color="MistyRose" Text="[TblBill.Sub500]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text77" Left="438.48" Top="347.76" Width="102.06" Height="26.46" Border.Lines="Right, Top, Bottom" Text="[TblBill.BillSum]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Titr, 12pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text78" Left="52.92" Top="151.2" Width="139.86" Height="26.46" Border.Lines="All" Fill.Color="255, 255, 192" Text="[TblBill.Tbl_Usage.Cntr_No]" HorzAlign="Right" Font="B Lotus, 14pt, style=Bold"/>
+      <TextObject Name="Text80" Left="52.92" Top="177.66" Width="139.86" Height="26.46" Border.Lines="All" Text="[TblBill.FullName]" HorzAlign="Right" Font="B Lotus, 14pt, style=Bold"/>
+      <TextObject Name="Text81" Left="90.72" Top="204.12" Width="102.06" Height="26.46" Border.Lines="Right, Top, Bottom" Fill.Color="255, 255, 192" Text="[TblBill.Wtr_Price]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text82" Left="90.72" Top="230.58" Width="102.06" Height="26.46" Border.Lines="Right, Top, Bottom" Text="[TblBill.Communion]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text83" Left="90.72" Top="257.04" Width="102.06" Height="26.46" Border.Lines="Right, Top, Bottom" Fill.Color="255, 255, 192" Text="[TblBill.Debt]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text84" Left="90.72" Top="283.5" Width="102.06" Height="26.46" Border.Lines="Right, Top, Bottom" Text="[TblBill.Credit]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text85" Left="90.72" Top="347.76" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Fill.Color="AliceBlue" Text="[TblBill.BillSum]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Titr, 12pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text6" Left="52.92" Top="69.93" Width="79.38" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="AliceBlue" Text="[TblBill.Term_No]" HorzAlign="Right" Font="B Lotus, 14pt, style=Bold"/>
+      <TextObject Name="Text69" Left="888.3" Top="200.34" Width="60.48" Height="37.8" Border.Lines="Left, Top, Bottom" Fill.Color="90, 173, 255, 47" Text="[TblBill.Term_No]" HorzAlign="Right" VertAlign="Bottom" Font="B Lotus, 14pt, style=Bold"/>
+      <TextObject Name="Text73" Left="657.72" Top="238.14" Width="71.82" Height="37.8" Border.Lines="Left, Top, Bottom" Text="[TblBill.TermStart]" HorzAlign="Center" VertAlign="Bottom" Font="B Lotus, 13pt, style=Bold"/>
+      <TextObject Name="Text86" Left="729.54" Top="238.14" Width="75.6" Height="37.8" Border.Lines="Left, Top, Bottom" Fill.Color="90, 173, 255, 47" Text="[TblBill.TermStart_Pre]" HorzAlign="Center" VertAlign="Bottom" Font="B Lotus, 13pt, style=Bold"/>
+      <TextObject Name="Text87" Left="52.92" Top="18.9" Width="245.7" Height="37.8" Fill.Color="White" Text="شبکه آبرسانی روستای بنیس" HorzAlign="Center" VertAlign="Center" Font="B Jadid, 16pt, style=Bold"/>
+      <TextObject Name="Text70" Left="657.72" Top="143.64" Width="328.86" Height="45.36" Border.Lines="Left, Top, Bottom" Fill.Color="90, 173, 255, 47" Text="[TblBill.Addr]" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <LineObject Name="Line2" Left="-3.78" Top="395.01" Width="1126.44" Border.Color="OrangeRed" Border.Style="Dash" Diagonal="true"/>
+      <TextObject Name="Text40" Left="540.54" Top="204.12" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="MistyRose" Text="تخفیف" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text45" Left="400.68" Top="204.12" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="MistyRose" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text24" Left="438.48" Top="204.12" Width="102.06" Height="26.46" Border.Lines="Top, Bottom" Fill.Color="MistyRose" Text="[TblBill.Discount]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text88" Left="52.92" Top="283.5" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="White" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text89" Left="52.92" Top="257.04" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="255, 255, 192" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text90" Left="52.92" Top="230.58" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="White" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text91" Left="52.92" Top="204.12" Width="37.8" Height="26.46" Border.Lines="Left, Top, Bottom" Fill.Color="255, 255, 192" Text="ريال" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text92" Left="771.12" Top="68.04" Width="71.82" Height="37.8" Border.Lines="Left, Right, Top" Border.BottomLine.Color="DimGray" Border.BottomLine.Style="DashDotDot" Fill.Color="90, 173, 255, 47" Text="اشتراک" HorzAlign="Center" VertAlign="Center" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text79" Left="771.12" Top="105.84" Width="71.82" Height="37.8" Border.Lines="All" Border.TopLine.Color="DimGray" Border.TopLine.Style="DashDotDot" Fill.Color="90, 173, 255, 47" Text="[TblBill.Tbl_Usage.Cust_No]" HorzAlign="Center" VertAlign="Bottom" Font="B Lotus, 14pt, style=Bold" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text93" Left="192.78" Top="124.74" Width="105.84" Height="26.46" Border.Lines="All" Fill.Color="White" Text="شماره اشتراک" HorzAlign="Right" Font="B Lotus, 12pt, style=Bold"/>
+      <TextObject Name="Text94" Left="52.92" Top="124.74" Width="139.86" Height="26.46" Border.Lines="All" Text="[TblBill.Tbl_Usage.Cust_No]" HorzAlign="Right" Font="B Lotus, 14pt, style=Bold"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="404.9" Width="1122.66"/>
+  </ReportPage>
+</Report>
